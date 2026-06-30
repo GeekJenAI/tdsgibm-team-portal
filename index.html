@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team Portal</title>
+  <title>TechData Singapore - IBM Team Landing Page</title>
+  <meta property="og:title" content="TechData Singapore - IBM Team Landing Page" />
+  <meta property="og:type" content="website" />
   <!-- Netlify Identity Widget (handles /admin redirect after login) -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <!-- Marked.js: renders Markdown body content -->
@@ -312,7 +314,7 @@
         const { meta, body } = parseFrontMatter(text);
 
         // Browser tab title
-        document.title = meta.title || 'Team Portal';
+        document.title = meta.title || 'TechData Singapore - IBM Team Landing Page';
 
         // Hero image
         if (meta.hero_image) {
