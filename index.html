@@ -208,9 +208,7 @@
       .then(text => {
         const { meta, body } = parseFrontMatter(text);
 
-        // Title & subtitle
-        if (meta.title)    document.getElementById('page-title').textContent    = meta.title;
-        if (meta.subtitle) document.getElementById('page-subtitle').textContent = meta.subtitle;
+        // Browser tab title
         document.title = meta.title || 'Team Portal';
 
         // Hero image
