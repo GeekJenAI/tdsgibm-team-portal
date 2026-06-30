@@ -61,3 +61,15 @@ Turning Data into Revenue-Driving Action.
 <br />
 
 <hr>
+
+<div style="text-align: center;">Let me know if you have any questions and I look forward to speaking soon.
+
+Any pricing requests can be sent to [Sg_ibmsw@techdata.com](mailto:Sg_ibmsw@techdata.com) for software or [Sg_ibmhw@techdata.com](mailto:Sg_ibmhw@techdata.com) for hardware.
+
+#### Kaitlyn Shi | BDM - IBM Automation & Data
+
+[Connect on LinkedIn](https://www.linkedin.com/in/kaitlyn-shi/) | [Book a Meeting](https://outlook.office.com/bookwithme/user/f2d2e98dc3b74ddb8e84fddf771eeabc@techdata.com?anonymous&ep=plink) 
+
+</div>
+
+<hr>
