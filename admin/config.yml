@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: GeekJenAI/team-portal
+  name: git-gateway
   branch: main
 
 media_folder: "uploads"
