@@ -292,14 +292,7 @@
       }
     }
 
-    const base = document.querySelector('base')?.href || (location.origin + location.pathname.replace(/\/[^/]*$/, '/'));
-
-    // Rewrite absolute /uploads/ paths to relative so they work on GitHub Pages subpaths
-    function fixPath(p) {
-      return p && p.startsWith('/') ? p.slice(1) : p;
-    }
-
-    fetch(base + 'content/page.md')
+    fetch('/content/page.md')
       .then(r => {
         if (!r.ok) throw new Error('Could not load page content.');
         return r.text();
@@ -313,14 +306,13 @@
         // Hero image
         if (meta.hero_image) {
           const img = document.getElementById('hero-img');
-          img.src = fixPath(meta.hero_image);
+          img.src = meta.hero_image;
           img.classList.remove('hidden');
         }
 
-        // Body (rich text / markdown) — fix absolute /uploads/ paths in rendered HTML
-        const rendered = body.trim() ? marked.parse(body) : '<p><em>No content yet. Visit /admin to add content.</em></p>';
+        // Body (rich text / markdown)
         document.getElementById('body-content').innerHTML =
-          rendered.replace(/(src|href)="\/uploads\//g, '$1="uploads/');
+          body.trim() ? marked.parse(body) : '<p><em>No content yet. Visit /admin to add content.</em></p>';
 
         // Links
         const links = Array.isArray(meta.links) ? meta.links : [];
@@ -342,7 +334,7 @@
           attachments.forEach(att => {
             if (!att.file) return;
             const li = document.createElement('li');
-            li.innerHTML = `<a href="${fixPath(att.file)}" download>${att.name || att.file}</a>`;
+            li.innerHTML = `<a href="${att.file}" download>${att.name || att.file}</a>`;
             ul.appendChild(li);
           });
           document.getElementById('attachments-card').classList.remove('hidden');

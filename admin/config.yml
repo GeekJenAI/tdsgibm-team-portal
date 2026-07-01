@@ -2,7 +2,7 @@ backend:
   name: github
   repo: GeekJenAI/tdsgibm-team-portal
   branch: main
-  auth_type: pkce
+  base_url: https://cms-oauth.geek-gen.workers.dev
 
 media_folder: "uploads"
 public_folder: "/uploads"
