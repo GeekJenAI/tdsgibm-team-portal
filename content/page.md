@@ -1,7 +1,7 @@
 ---
 title: TechData Singapore | IBM
 subtitle: TechData Singapore | IBM Team Landing Page
-hero_image: https://cis-prod-bss.seismic.com/api/download/v1/blob?t=ibm&c=ibm&id=8e369c7f-c633-485b-91f2-caae5537ca62&et=20260630173546&isfullcontainername=True&sig=wQOGmxuRQE6ZeM%2FURFFq1ncO2aJwD0BDwXE7oTkT6D4%3D
+hero_image: /uploads/techdata-header.png
 links: []
 attachments:
   - name: Singapore Tech Data Vendor Line Card
