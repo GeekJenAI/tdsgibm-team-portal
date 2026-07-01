@@ -31,25 +31,20 @@ tdsgibm-team-portal/
    - **Application name:** Team Portal CMS (or any name)
    - **Homepage URL:** `https://YOUR_USERNAME.github.io/tdsgibm-team-portal`
    - **Authorization callback URL:** `https://api.netlify.com/auth/callback`
-     *(Decap CMS uses this public OAuth relay regardless of hosting platform)*
+     *(Decap CMS's GitHub backend uses this as its OAuth token exchange endpoint — no Netlify account required)*
 3. Click **Register application**
 4. Note the **Client ID** and click **Generate a new client secret** — save both
 
-### 2. Register the OAuth App with Decap CMS
+### 2. CMS Backend (already configured)
 
-Decap CMS needs a small backend proxy to exchange the OAuth token. The simplest option is the free **[netlify-cms-github-oauth-provider](https://github.com/vencax/netlify-cms-github-oauth-provider)** or the managed relay already built into Decap.
-
-> **Easiest path:** Use Decap's hosted proxy by adding `base_url` to the backend config in `admin/config.yml`:
+Decap CMS's `github` backend handles authentication directly via GitHub OAuth. The `admin/config.yml` is already set up correctly — no extra server or account needed:
 
 ```yaml
 backend:
   name: github
   repo: GeekJenAI/tdsgibm-team-portal
   branch: main
-  base_url: https://api.netlify.com   # public OAuth relay — no Netlify account needed
 ```
-
-This is already configured. No extra server needed.
 
 ### 3. Push to GitHub
 
