@@ -6,7 +6,7 @@ links: []
 attachments:
   - name: Singapore Tech Data Vendor Line Card
     file: /uploads/tech-data-line-card-jan-2026-.pdf
-  - name: TD Singapore - IBM Team
+  - name: Singapore TechData-IBM Team
     file: /uploads/td-singapore-ibm-team.png
 ---
 <br />
